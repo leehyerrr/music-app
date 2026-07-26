@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "packages/music-server",
+    },
+    {
+      "path": "packages/music-client",
+    },
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+  },
+}
