@@ -6,6 +6,7 @@ const arr = ["aaa", "bbb", "ccc"];
 
 function App() {
   const [show, setShow] = useState(true);
+  const [sel, setSel] = useState("1");
 
   return (
     <>
@@ -25,6 +26,20 @@ function App() {
             </label>
           );
         })}
+      </div>
+      <div>
+        <select
+          name="sel"
+          id="sel1"
+          onChange={(e) => setSel(e.currentTarget.value)}
+        >
+          <option value="1">111</option>
+          <option value="2">222</option>
+          <option value="3">333</option>
+        </select>
+        <div className={cn(sel !== "1" && "hidden")}>111</div>
+        <div className={cn(sel !== "2" && "hidden")}>222</div>
+        <div className={cn(sel !== "3" && "hidden")}>333</div>
       </div>
       <div>
         <div className={cn(show && "hidden")}>안녕</div>
