@@ -1,6 +1,8 @@
 import cn from "classnames";
 import { useState } from "react";
 import "./App.css";
+import Test from "./Test";
+import Test2 from "./Test2";
 
 const arr = ["aaa", "bbb", "ccc"];
 
@@ -11,6 +13,8 @@ function App() {
   return (
     <>
       <div className="flex space-x-3">
+        <Test isReadOnly={true} cc={<Test2 />} />
+
         {arr.map((i) => {
           const radioId = `radio${i}`;
 
